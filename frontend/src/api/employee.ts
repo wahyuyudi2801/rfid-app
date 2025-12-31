@@ -1,5 +1,4 @@
 import { Employee } from '@/types/employee'
-import React from 'react'
 
 export default function getEmployees(): Promise<Employee[]> {
   return Promise.resolve([

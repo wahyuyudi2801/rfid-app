@@ -1,5 +1,4 @@
 import { Attendance } from '@/types/attendance'
-import React from 'react'
 
 export default function getAttendances(): Promise<Attendance[]> {
   return Promise.resolve([
