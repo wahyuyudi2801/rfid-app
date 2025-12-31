@@ -1,0 +1,2 @@
+menghapus cache git
+git rm -r --cached .
