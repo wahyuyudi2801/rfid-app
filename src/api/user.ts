@@ -9,6 +9,6 @@ export function getUsers(): User[] {
             employee_id: 1,
             role: "Admin",
             registration_number: "1234"
-        }
+        },
     ]
 }

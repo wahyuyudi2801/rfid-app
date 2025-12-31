@@ -1,5 +1,4 @@
-import React from "react";
-import { DataTable } from "./data-table";
+import { DataTable } from "../_components/data-table";
 import { columns } from "./columns";
 import { getUsers } from "@/api/user";
 
