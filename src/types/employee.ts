@@ -6,5 +6,5 @@ export type Employee = {
     registration_number: string;
     position: string;
     work_unit: string;
-    status: number;
+    status: 1 | 2; // 1. Aktif, 2. Tidak Aktif
 }

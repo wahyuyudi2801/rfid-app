@@ -1,10 +1,9 @@
 "use client"
 
-import { Button } from "@/components/ui/button";
 import { User } from "@/types/user";
 import { ColumnDef } from "@tanstack/react-table";
-import { EditIcon, Trash } from "lucide-react";
 import Link from "next/link";
+import ActionButtons from "../_components/action-buttons";
 
 export const columns: ColumnDef<User>[] = [
     {
@@ -29,22 +28,15 @@ export const columns: ColumnDef<User>[] = [
         }
     },
     {
+        id: "actions",
         header: "Actions",
         enableSorting: false,
         enableHiding: false,
-        id: "actions",
         cell: ({ row }) => {
             const user = row.original
 
             return (
-                <div className="flex items-center gap-2">
-                    <Button variant={'default'} className="bg-yellow-500 hover:bg-yellow-500/90">
-                        <EditIcon/>
-                    </Button>
-                    <Button variant={'destructive'}>
-                        <Trash/>
-                    </Button>
-                </div>
+                <ActionButtons/>
             )
         }
     }

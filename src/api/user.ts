@@ -1,7 +1,7 @@
 import { User } from "@/types/user";
 
-export function getUsers(): User[] {
-    return [
+export function getUsers(): Promise<User[]> {
+    return Promise.resolve([
         {
             id: 1,
             username: "admin",
@@ -10,5 +10,5 @@ export function getUsers(): User[] {
             role: "Admin",
             registration_number: "1234"
         },
-    ]
+    ])
 }
